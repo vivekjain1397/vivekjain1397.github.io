@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vivek Jain</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="cosmo-bootstrap.min.css" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="jquery.plusanchor.js"></script>
+	<script type="text/javascript" src="bootstrap-scrollspy.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('body').plusAnchor({
+			easing: 'easeInOutExpo',
+			speed:1000
+		});
+
+		// var id = window.location.hash.substring(1);
+		// if (id) {cation.hash.substring(1));}
+		// if (id) {activate(window.location.hash.substring(1));}
+	});
+
+	var shown = false;
+	function populate() {
+		$.get('soundsculptr-tweets.txt', function(data) {
+			$('#soundsculptr-tweets').empty();
+			$('#soundsculptr-tweets').append(data);
+		});
+	}
+
+	var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36906134-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+<body>
+	<div id="navbar-scroll" data-scrollspy="scrollspy" class="navbar navbar-inverse black-navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#about">Vivek Jain</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          	<span class="icon-bar"></span>
+          	<span class="icon-bar"></span>
+          	<span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse navbar-responsive-collapse collapse bs-js-navbar-scrollspy">
+          <ul class="nav navbar-nav">
+				<li id="aboutnav"><a href="#about">About Me</a></li>
+				<li id="projectsnav"><a href="#projects">Projects</a></li>
+				<li id="educationnav"><a href="#education">Education</a></li>
+				<li id="experiencenav"><a href="#experience">Experience</a></li>
+				<li id="contactnav"><a href="#contact">Contact/Links</a></li>
+			</ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+<!-- 
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner" style="-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#about">Jared Zoneraich</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="black-navbar-active active" id="aboutnav"><a href="#about">About Me</a></li>
+						<li id="projectsnav"><a href="#projects">Projects</a></li>
+						<li id="experiencenav"><a href="#education">Education</a></li>
+						<li id="experiencenav"><a href="#experience">Experience</a></li>
+						<li id="contactnav"><a href="#contact">Contact/Links</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+	<div class="aboutme" id="about">
+		<br/><br/><br/>
+		<div class="container">
+			<br/>
+			<div class="jumbotron">
+				<h1 style="text-align: center;">I'm Vivek Jain<br/><small style="color: #808080; font-size: 20px;"><br> <img src = "profile.jpg" class = "img-circle" alt = "Profile" width = "300px" height = "300 px"><br /> <hr> <span id="header-break-line"></span>Hacker, Nerd, Student, Entrepreneur</small></h1><br/>
+				<p>
+					<span class="intro-text">
+					I am a freshman at the <a href="http://www.berkeley.edu/">University of California-Berkeley</a>, majoring in Computer Science (Class of 2019). Most of my time is spent <a href="#projects">programming</a> or <a href="#education">learning</a>.
+					<br><br>
+					I helped organize on of the largest collegiate hackathons: <a href="http://www.calhacks.io/">Cal Hacks 2.0</a>. Previously, I have interned at <a href="http://www.nasa.com">NASA</a>
+					</span>
+					<hr class="abouthr">
+					<span style="font-size: 150%; color: gray;">Programming Languages I Use: </span>
+					<div class="row list-i-use">
+						<div class="col-md-1">&nbsp;</div>
+						<div class="col-md-3">
+							<h3>Most Proficient:</h3>
+							<ul>
+								<li>Python</li>
+								<li>Java</li>
+								<li>HTML, CSS</li>
+								<li>C/C++</li>
+								<li>SQL</li>
+							</ul>
+						</div>
+						<div class="col-md-1">&nbsp;</div>
+						<div class="col-md-3">
+							<h3>Have Used Before:</h3>
+							<ul>
+								<li>Android Development</li>
+								<li>PHP</li>
+								<li>Swift (iOS SDK)</li>
+								<li>Scheme</li>
+								<li>Javascript</li>
+								<li>Arduino</li>
+							</ul>
+						</div>
+						<div class="col-md-4">&nbsp;</div>
+					</div>
+					<hr class="abouthr">
+					<span style="font-size: 150%; color: gray;">Technologies I Use: </span>
+					<div class="row list-i-use">
+						<div class="col-md-1">&nbsp;</div>
+						<div class="col-md-3">
+							<h3>Most Proficient:</h3>
+							<ul>
+								<li>Flask</li>
+								<li>Git</li>
+								<li>Twitter Bootstrap</li>
+								<li>Jinja2</li>
+								<li>MongoDB</li>
+								<li>Heroku</li>
+								<li>Google App Engine</li>
+							</ul>
+						</div>
+						<div class="col-md-1">&nbsp;</div>
+						<div class="col-md-3">
+							<h3>Have Used Before:</h3>
+							<ul>
+								<li>Vim</li>
+								<li>LEAP Motion SDK</li>
+								<li>OpenShift</li>
+								<li>GM Dashboard SDK</li>
+								<li>RabbitMQ</li>
+								<li>Nagios</li>
+								<li>Django</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<h3>&nbsp;</h3>
+							<ul>
+								<li>iOS SDK</li>
+								<li>Yii</li>
+								<li>MySQL</li>
+								<li>PostgreSQL</li>
+								<li>SQLAlchemy</li>
+								<li>Node.js</li>
+							</ul>
+						</div>
+					</div>
+					<!-- <hr class="abouthr">
+					<span class="intro-text">
+					When I'm not programming, you can find me reading <a href="http://gizmodo.com">Gizmodo</a>, <a href="http://lifehacker.com">Lifehacker</a>, <a href="http://codinghorror.com">Coding Horror</a>, <a href="http://joel.is/">Joel.is</a>, or <a href="http://news.ycombinator.com">Hacker News</a>.</span> -->
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="projects" id="projects">
+		<br/><br/>
+		<div class="container">
+			<br/>
+			<div class="jumbotron">
+				<h1>Projects</h1>
+				<div class="row cenetered">
+					<a href="http://bcaclassmatch.com/"><img src="classmatch2.png" class="logo" alt="mindwake Logo"></a>
+					<div class="col-md-10 col-md-offset-1" class="explanation">
+						<a href="http://bcaclassmatch.com/" style="color: black;"><h3><strong>MindWake</strong></a><small style="color: gray;"> - 2014-2015</small></h3>
+						<p>
+							<span class="tech"><span class="technologies-used">Technologies used - </span> Arduino, BlueSMiRF Bluetooth software, C, Circuit Maker, 3D Printer</span>
+							<hr class="projects-divider-hr">
+							<div class="explanation-text">
+							Mindwake is a wearable device which alerts a driver when he/she is losing attention or falling asleep. It utilizes brainwave and other sensor data along with my algorithm to determine if the driver has lost attention or fallen asleep. Data is sent via Bluetooth and interpreted by an Arduino.  Provisional Patent pending.
+							</div>
+						</p>
+					</div>
+				</div>
+				<br/>
+				<hr class="projectshr">
+				<br/>
+				<div class="row cenetered">
+					<a href="http://getretention.herokuapp.com/" style="color: black;"><img class="logo" src="retention.jpg" alt="pinloco Screenshot"></a><br/>
+					<div class="col-md-10 col-md-offset-1" class="explanation">
+						<a href="http://getretention.herokuapp.com/" style="color: black;"><h3><strong>PinLoco</strong></a><small style="color: gray;"> - 2015</small></h3>
+						<p>
+							<span class="tech"><span class="technologies-used">Technologies used - </span> Swift (iOS), Parse</span>
+							<hr class="projects-divider-hr">
+							<div class="explanation-text">
+							PinLoco is a location based iOS app which allows users to take pictures at their current location and post to a map. After that, the user can view the pins of other users in that location and rate the picture they took. The purpose of this app is to allow users to create a sort of trail so other users can view that trail and maybe check out similar locations. This app was created at HackPrinceton 2015 and will be continued. 
+							</div>
+						</p>
+					</div>
+				</div>
+				<br/>
+				<hr class="projectshr">
+				<div class="row cenetered">
+					<a href="http://betsonapp.com/" style="color: black;"><img class="logo" src="betson.jpg" alt="BetsOn Screenshot"></a><br/>
+					<div class="col-md-10 col-md-offset-1" class="explanation">
+						<a href="http://calgroupfinder.com/" style="color: black;"><h3><strong>CalGroupFinder</strong></a><small style="color: gray;"> - 2015</small></h3>
+						<p>
+							<span class="tech"><span class="technologies-used">Technologies used - </span> HTML, CSS, Javascript, PHP, MySQL</span>
+							<hr class="projects-divider-hr">
+							<div class="explanation-text">
+							Made at the 2014 Spring PennApps Hackathon (February 14-16, 2014), BetsOn is the easiest, most sophisticated, and most natural way to make bets with your friends. Select a custom-built or preset bet on your Pebble and shake hands with your Pebble-wearing friend. Your bet is now sealed: BetsOn shares your bet on your social media and will verify the winning condition programmatically, hooking into Venmo to make sure the loser pays up. We won the Dropbox "It just works" prize!
+							<br/><br/>
+							</div>
+						</p>
+					</div>
+				</div>
+				<br/>
+				<hr class="projectshr">
+				<div class="row cenetered">
+					<a href="http://www.getwhodat.com/" style="color: black;"><img class="logo" src="whodat.jpg" alt="WhoDat Screenshot"></a><br/>
+					<div class="col-md-10 col-md-offset-1" class="explanation">
+						<a href="http://devpost.com/software/smart-sight-rodwj" style="color: black;"><h3><strong>Smart Sight</strong></a><small style="color: gray;"> - 2015</small></h3>
+						<p>
+							<span class="tech"><span class="technologies-used">Technologies used - </span> Java, Node.js, Bloomberg API, Digital Ocean, Mashery API, Unity, Vuforia, Capital One Api, C#</span>
+							<hr class="projects-divider-hr">
+							<div class="explanation-text">
+							An augmented reality android app which provides real-time financial data, such as stock prices, when pointed at any object’s company logo. Utilizes Bloomberg API, Mashery API, Capital One API, and Edgar-Online API. Built at PennApps Winter 2015 in C#.
+							</div>
+						</p>
+					</div>
+				</div>
+				<br/>
+				<hr class="projectshr">
+				<div class="row cenetered">
+					<a href="https://www.hackerleague.org/hackathons/hackru-fall-2013/hacks/frames" style="color: black;"><img class="logo" src="frames.png" alt="Frames Logo"></a><br/>
+					<div class="col-md-10 col-md-offset-1" class="explanation">
+						<a href="http://davidmelvin.me/YoutubeMotion/" style="color: black;"><h3><strong>YouTube Motion</strong></a><small style="color: gray;"> - 2014</small></h3>
+						<p>
+							<span class="tech"><span class="technologies-used">Technologies used - </span> HTML, CSS, Javascript, Leap Motion API</span>
+							<hr class="projects-divider-hr">
+							<div class="explanation-text">
+							A website and google chrome extension which allows a user to control basic YouTube functions such as volume, zoom, forward, and backward using hand gestures. Utilizes Leap Motion API and YouTube API. Built at HackRU in HTML, CSS, and Javascript.
+
+							</div>
+						</p>
+					</div>
+				</div>
+				<br/>
+				</a>
+				</div>
+	</div>
+	<div class="education" id="education">
+		<br/><br/><br/>
+		<div class="container">
+			<br/>
+			<div class="jumbotron">
+				<h1>Education</h1>
+				
+				<blockquote>
+					<p>I have never let my schooling interfere with my education.<small style="color: #A6A6A6;">Mark Twain</small></p>
+				</blockquote>
+				
+				<h3><span style="color: gray;">University: </span><strong class="school"> <span id="new-line" style="display:none;"><br/></span><span id="school-name">University of California-Berkeley <small style="color: #A6A6A6;"> (Class of 2019) Computer Science</small></span></strong></h3>
+				<hr class="educationhr">
+
+				<h3><span style="color: gray;">High School: </span><strong class="school"> <span id="new-line" style="display:none;"><br/></span><span id="school-name">Middlesex County Academy <small style="color: #A6A6A6;"> (Class of 2015) The Academy for Technologies and Computer Science</small></span></strong></h3>
+				<hr class="educationhr">
+				
+				<h3 style="color: gray;">Courses:</h3>
+				<div class="row education-text">
+					<div class="col-md-1">&nbsp;</div>
+					<div class="col-md-5">
+						<h3><a href="http://udacity.com">University of California, Berkeley:</a></h3>
+						<span style="padding-left: 0em;">CS61A:</span> The Structure and Interpretation of Computer Programs (Python, Scheme, SQL)<small style="color: gray;"> (2015-Present)</small>
+						<span style="padding-left: 0em;">CS98:</span> Intro to Engineering<small style="color: gray;"> (2015-Present)</small>
+					</div>
+					<div class="col-md-6">
+						<h3><a href="http://bcts.bergen.org/index.php/bergen-county-academies?layout=blog">Middlesex County Academy:</a></h3>
+						<span style="padding-left: 2em;">C++ <small style="color: gray;"> (2013)</small></span><br/>
+						<span style="padding-left: 2em;">Digital Circuits <small style="color: gray;"> (2012)</small></span><br/>
+						<span style="padding-left: 2em;">Analog Circuits <small style="color: gray;"> (2014)</small></span><br/>
+						<span style="padding-left: 2em;">Microcontrollers <small style="color: gray;"> (2013)</small></span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="experience" id="experience">
+		<br/><br/><br/>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Experience</h1>
+				<br/><br/>
+				<!-- add MLH-->
+				<div class="row cenetered">
+					<a href="http://nasa.com/"><img src="redditlogo.png" class="logo" alt="nasa Logo"></a>
+					<div class="col-md-10 col-md-offset-1" class="explanation">
+						<h3><strong>Intern for  <a href="http://nasa.com/">NASA</a> <small style="color: gray;"> - 2013 to 2014</small></strong></h3>
+						<p>
+							<hr class="experiencehr">
+							<div class="explanation-text">
+							
+							</div>
+						</p>
+					</div>
+				</div>
+				<hr class="projectshr">
+				<div class="explanation-text"><br/></div>
+				<div class="row cenetered">
+					<a href="http://hackbca.com/"><img src="hackbcalogo.jpg" class="logo" alt="hackBCA Logo"></a>
+					<div class="col-md-10 col-md-offset-1" class="explanation">
+						<h3><strong>Organizer of <a href="http://hackbca.com/">Cal Hacks 2.0</a> <small style="color: gray;"> - 2015</small></strong></h3>
+						<p>
+							<hr class="experiencehr">
+							<div class="explanation-text">
+							
+							</div>
+						</p>
+					</div>
+				</div>
+				
+				<br/>
+			</div>
+		</div>
+	</div>
+	<div class="contact" id="contact">
+		<br/><br/><br/>
+		<div class="container">
+			<br/>
+			<div class="jumbotron">
+				<h1>Contact Me <span style="font-size: 70%;">/ Miscellaneous Links</span></h1><br/><br/>
+				<div class="row contact-row">
+					<div class="col-md-2">
+						<h2>Email</h2>
+					</div>
+					<div class="col-md-5">
+						<h2>vivekjain@berkeley.edu</h2>
+					</div>
+				</div>
+				<!-- <div class="row contact-row">
+					<div class="col-md-2">
+						<h2>Blog</h2>
+					</div>
+					<div class="col-md-5">
+						<h2><a href="http://blog.imjaredz.com/">blog.imjaredz.com</a></h2>
+					</div>
+				</div> -->
+				
+				<div class="row contact-row">
+					<div class="col-md-2">
+						<h2>LinkedIn</h2>
+					</div>
+					<div class="col-md-5">
+						<h2><a href="http://www.linkedin.com/in/vivekjain03">linkedin.com/in/vivekjain03</a></h2>
+					</div>
+				</div>
+				<div class="row contact-row">
+					<div class="col-md-2">
+						<h2>Github</h2>
+					</div>
+					<div class="col-md-5">
+						<h2><a href="https://github.com/vivekjain1397">github.com/vivekjain1397</a></h2>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
