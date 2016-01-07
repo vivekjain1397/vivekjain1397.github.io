@@ -197,7 +197,7 @@ hr.experiencehr {
 hr.projects-divider-hr {
     border: 0;
     height: 1px;
-    background: #f1c40f;
+    background: #3498db;
     background-image: -webkit-linear-gradient(left, #ccc, #f1c40f, #ccc); 
     background-image:    -moz-linear-gradient(left, #ccc, #f1c40f, #ccc); 
     background-image:     -ms-linear-gradient(left, #ccc, #f1c40f, #ccc); 
