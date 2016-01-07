@@ -198,10 +198,10 @@ hr.projects-divider-hr {
     border: 0;
     height: 1px;
     background: #3498db;
-    background-image: -webkit-linear-gradient(left, #ccc, #f1c40f, #ccc); 
-    background-image:    -moz-linear-gradient(left, #ccc, #f1c40f, #ccc); 
-    background-image:     -ms-linear-gradient(left, #ccc, #f1c40f, #ccc); 
-    background-image:      -o-linear-gradient(left, #ccc, #f1c40f, #ccc); 
+    background-image: -webkit-linear-gradient(left, #ccc, #3498db, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #3498db, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #3498db, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #3498db, #ccc); 
 }
 
 hr.educationhr {
